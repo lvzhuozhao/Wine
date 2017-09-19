@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.ke.Ke_ShouyinActivity">
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/shouyin_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="收银"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#2b3139"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="594px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75px"
+            android:src="@mipmap/shouyin" />
+
+        <RelativeLayout
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75px">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="预订"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26px"
+                android:text="签到"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="26px"
+                android:text="收银"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="房间号："
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/shouyin_numberhhh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:hint="请输入房间号"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/shouyin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#3d4878"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

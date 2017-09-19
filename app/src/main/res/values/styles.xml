@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2b3139</item>
+        <item name="colorPrimaryDark">#2b3139</item>
+        <item name="colorAccent">#2b3139</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+<style name="CustomTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+    <item name="android:textSize">80px</item>
+    <item name="android:textAllCaps">true</item>
+</style>
+    <style name="CustomTabLayoutTextAppearance1" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">34px</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MyCustomTabLayout">
+        <!-- 改变指示器下标的颜色-->
+        <item name="tabIndicatorColor">#3F51B5</item>
+        <!-- 改变选中字体的颜色-->
+        <item name="tabSelectedTextColor">#3F51B5</item>
+        <!-- 改变未选中字体的颜色-->
+        <item name="tabTextColor">#030015</item>
+    </style>
+</resources>

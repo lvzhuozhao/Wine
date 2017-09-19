@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wuxiaolong.androidmvpsample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ke.Ke_GeRenActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ke.Ke_DingDanActivity" />
+        <activity android:name=".mvp.Yingxiao.Ying_GeRenActivity" />
+        <activity android:name=".ke.Ke_xiadanActivity" />
+        <activity android:name=".ke.Ke_fangtaiActivity" />
+        <activity android:name=".ke.Ke_ShouyinActivity" />
+        <activity android:name=".ke.Ke_BuchongActivity" />
+        <activity android:name=".ke.Ke_WhyActivity" />
+        <activity android:name=".ke.Ke_JieZhangActivity" />
+        <activity android:name=".ke.Ke_jieqianActivity" />
+        <activity android:name=".ke.Ke_ChenkinActivity" />
+        <activity android:name=".ke.Ke_LiebiaoActivity" />
+        <activity android:name=".ke.Ke_xiangActivity" />
+        <activity
+            android:name=".can.Can_GeRenActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".can.Can_liebiaoActivity" />
+        <activity android:name=".mvp.Wenquan.Can_shouyinActivity" />
+        <activity android:name=".ke.Ke_JiezhangwayActivity" />
+        <activity android:name=".ke.Ke_WebActivity" />
+        <activity android:name=".mvp.Wenquan.C_shouyinActivity" />
+        <activity android:name=".mvp.Wenquan.Can_xiangActivity" />
+        <activity android:name=".ke.Ke_Yu_CanActivity" />
+        <activity android:name=".can.Can_xiangctivity" />
+        <activity android:name=".can.Can_JieZhangActivity" />
+        <activity android:name=".can.Can_WebActivity" />
+        <activity android:name=".can.Can_jieqianActivity" />
+        <activity android:name=".can.Can_DingdanActivity" />
+        <activity android:name=".wen.Wen_DingdanActivity" />
+        <activity
+            android:name=".wen.Wen_GeRenActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".can.Can_guazhangActivity" />
+        <activity android:name=".can.Can_guaWebActivity" />
+        <activity android:name=".wen.Wen_xiadanActivity" />
+        <activity android:name=".can.Can_xiadanActivity" />
+        <activity android:name=".wen.Wen_xiangActivity" />
+        <activity android:name=".wen.Wen_jiezhangwayActivity" />
+        <activity android:name=".wen.Wen_jieqianActivity" />
+        <activity android:name=".wen.Wen_GuazhangActivity" />
+        <activity android:name=".wen.Wen_liebiaoActivity" />
+        <activity android:name=".wen.Wen_jiezhangwebActivity" />
+        <activity android:name=".wen.Wen_gua_webActivity" />
+        <activity android:name=".FinishActivity" />
+        <activity
+            android:name=".mvp.Yingxiao.Ying_DingdanActivity"
+            android:launchMode="singleTask" />
+
+    </application>
+
+</manifest>

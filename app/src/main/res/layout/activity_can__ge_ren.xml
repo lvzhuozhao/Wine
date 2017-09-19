@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.mvp.Canyin.Can_GeRenActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#2b3139"
+        android:layout_height="128px">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/c_center_back"
+            android:layout_marginLeft="50px"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="36px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/c_center_btn1"
+        android:layout_gravity="center"
+        android:textSize="32px"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn"
+        android:layout_marginTop="434px"
+        android:text="订单"
+        android:layout_width="300px"
+        android:layout_height="100px" />
+
+    <Button
+        android:id="@+id/c_center_btn2"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn"
+        android:text="收银"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.ke.Ke_WebActivity">
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/gua_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="结账"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/id_webView"
+        android:layout_width="match_parent"
+        android:layout_height="1150px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dayin"
+            android:layout_width="390px"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#3d4878"
+            android:text="打印" />
+
+        <Button
+            android:id="@+id/wancheng"
+            android:layout_width="390px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:background="#3d4878"
+            android:text="完成" />
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.ke.Ke_jieqianActivity">
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/jieqian_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="结欠"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="98px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="结欠人："
+            android:textColor="#39424c"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/jieqianren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:text="自动获取"
+            android:textColor="#39424c"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="结欠金额："
+            android:textColor="#39424c"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/jieqianjine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:text="自动获取"
+            android:textColor="#39424c"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="结欠日期："
+            android:textColor="#39424c"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/jieqianriqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:text="自动获取"
+            android:textColor="#39424c"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="*担保人："
+            android:textColor="#39424c"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/danbaoren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:hint="请输入内容"
+            android:background="#ffffff"
+            android:maxLines="1"
+            android:textColor="#39424c"
+            android:textSize="28px" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/jieqian_btn"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textSize="36px"
+            android:background="#3d4878"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

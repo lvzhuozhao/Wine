@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.ke.Ke_fangtaiActivity">
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/tai_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="房态"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430px"
+        android:background="#2b3139"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="650px"
+            android:layout_height="375px"
+            android:layout_marginLeft="68px"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/tai_span1"
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:hint="房间类型选择"
+                    android:textSize="28px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/tai_span2"
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:hint="房态类型选择"
+                    android:textSize="28px" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:hint="入住时间"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tai_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:hint="选择时间"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:hint="离店时间"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tai_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:hint="选择时间"
+                        android:textSize="28px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tai_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px"
+                    android:background="#3d4d78"
+                    android:text="确认查找"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="40px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24px"
+            android:text="一号楼"
+            android:textColor="#6875dc"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tai_yi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19px"
+
+            android:textColor="#39424c"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24px"
+            android:text="二号楼"
+            android:textColor="#6875dc"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tai_er"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19px"
+
+            android:textColor="#39424c"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24px"
+            android:text="三号楼"
+            android:textColor="#6875dc"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tai_san"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19px"
+            android:textColor="#39424c"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24px"
+                android:text="水上木屋"
+                android:textColor="#6875dc"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tai_shui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="19px"
+                android:textColor="#39424c"
+                android:textSize="24px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24px"
+                android:text="独栋别墅"
+                android:textColor="#6875dc"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tai_bieshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="19px"
+                android:textColor="#39424c"
+                android:textSize="24px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tai_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#3d4878"
+            android:text="快速预订"
+            android:textColor="#ffffff"
+            android:textSize="34px" />
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

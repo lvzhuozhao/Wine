@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300px"
+        android:text="登录"
+        android:textColor="#3c4350"
+        android:textSize="60px" />
+
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="133px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名："
+            android:textSize="28px" />
+
+        <EditText
+            android:textSize="28px"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入密码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="582px"
+        android:layout_height="100px"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码："
+            android:textSize="28px" />
+
+        <EditText
+            android:textSize="28px"
+            android:id="@+id/login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="请输入用密码"
+            android:text="" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="512px"
+        android:layout_height="130px"
+        android:layout_gravity="center"
+        android:layout_marginTop="87px"
+        android:background="@drawable/btn"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="36px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

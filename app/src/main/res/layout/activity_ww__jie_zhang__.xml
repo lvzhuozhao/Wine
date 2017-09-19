@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuxiaolong.androidmvpsample.wen.Wen_jiezhangwayActivity">
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/jj_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="结账"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/zz_btn1"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="434px"
+        android:background="@drawable/btn"
+        android:text="现金"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+
+    <Button
+        android:id="@+id/zz_btn2"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn"
+        android:text="刷卡"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+    <Button
+        android:id="@+id/zz_btn3"
+        android:layout_gravity="center"
+        android:textSize="32px"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn"
+        android:layout_marginTop="40px"
+        android:text="第三方"
+        android:layout_width="300px"
+        android:layout_height="100px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.wuxiaolong.androidmvpsample.can.Can_xiadanActivity">
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="#2b3139">
+
+        <ImageView
+            android:id="@+id/can_yuding_back"
+            android:layout_width="17px"
+            android:layout_height="31px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:src="@mipmap/back" />
+
+
+
+        <TextView
+            android:id="@+id/can_yuding_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="餐饮预订"
+            android:textColor="#ffffff"
+            android:textSize="36px"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="#2b3139"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="594px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75px"
+            android:src="@mipmap/yuding" />
+
+        <RelativeLayout
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75px">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="预订"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26px"
+                android:text="签到"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="26px"
+                android:text="收银"
+                android:textColor="#d6d6d6"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="650px"
+            android:layout_height="194px"
+            android:layout_marginLeft="68px"
+            android:layout_marginTop="60px"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/can_yuding_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="客户姓名"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/can_yuding_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="联系方式"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/can_yuding_span1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="*客户来源"
+                    android:textSize="28px" />
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/can_yuding_span2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="*市场分类"
+                    android:textSize="28px" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2b3139">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/yuyu_tab_layou"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            app:tabIndicatorColor="#587DCC"
+            app:tabSelectedTextColor="#587DCC"
+            app:tabTextAppearance="@style/CustomTabLayoutTextAppearance"
+            app:tabTextColor="#ffffff"></android.support.design.widget.TabLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/yuyu_pager"
+        android:layout_width="match_parent"
+        android:layout_height="560px"
+        android:layout_below="@id/tab_layou" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/can_fragrement_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#3d4878"
+            android:text="确认下单"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
